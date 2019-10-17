@@ -1,0 +1,87 @@
+-Data cleaning.
+10000,14
+
+RowNumber          10000
+CustomerId         10000
+Surname             2932
+CreditScore          460
+Geography              3{Spain,france,Germany}
+Gender                 2{F,M}
+Age                   70
+Tenure                11
+Balance             6382
+NumOfProducts          4
+HasCrCard              2{0,1}
+IsActiveMember         2{0,1}
+EstimatedSalary     9999
+Geography_Spain     
+Geography_France   
+Geography_Germany
+Gender_M
+Gender_F
+Exited                 2
+
+
+- Ignore : Row number ,Customer id, surname.
+- Discrete: Gender,Geography, HasCrCard,IsActiveMember.
+- Continues:  CreditScore, Age,Balance,Tenure,EstimatedSalary.
+- Prediction : Exited
+
+
+- Devide the data between Training and testing set. (60,40) (70,30) (80,20) (90,10)
+
+Normalization : Balance/estimated_salary,  Tenure/Age, CreditedScore/Tenure
+0 -> -1
+
+Geograhy,Gender-> enumertion.
+
+1> Plot : 10000 (Excited) : pie chart
+Bar charts
+2> Plot : Excited ( 1,0 ) vs Geography
+3> Plot : Excited (1,0) vs HasCrCard
+4> Plot : Excited (1,0) vs Gender
+5> Plot :  Excited (1,0) vs IsActiveMember
+Box plot
+6> Plot :  Excited (1,0) vs CreditScore, Age,Balance,Tenure,EstimatedSalary.
+
+
+Algorithms:
+1 - Decesion tree.
+2 - Random Forest.
+3 - Linear regression (multivariate).
+4 - SVM.
+5 - Logistic regression.
+
+
+
+- APi's : 
+
+API's --> Algorithm --> Predicted_value. (Monthly or Weakly)>>>>>> which is sector they want to work on.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+.
+
+
+										        JSON
+     XML ---------------------------------------------------------------------------------> import TAP DB
+      XML----------------->XML_1-----------------> .imp ------------------------->imprted.
+T24 ===> MULE/IIB ====> TTI =====> Gatewaypack =====>TAP...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
